@@ -7,8 +7,11 @@ ul {
   list-style: none;
 }
 .container {
-  margin: 0 215px;
-  align-self: center;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  /* margin: 0 215px;
+  align-self: center; */
 }
 .main-logo {
   font-family: "Raleway";
@@ -92,7 +95,7 @@ ul {
   line-height: 60px;
   letter-spacing: 0.06em;
   color: #ffffff;
-  width: 696px;
+  max-width: 696px;
   text-align: center;
   margin-top: 200px;
   margin-bottom: 30px;
@@ -361,32 +364,67 @@ ul {
   color: #2196f3;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1250px) {
   .contact-block {
     display: block;
   }
-  .we-do-list {
-    display: block;
+  .staff-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
- 
- .staff-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
- }
- .skills-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
- }
-
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .we-do-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 992px) {
+  .contact-block {
+    margin-left: 0px;
+  }
+  .we-do-list {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+
+  .main-logo {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 768px) {
+  .nav-item {
+    margin-right: 20px;
+  }
+  .staff-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .website-navigation {
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {
+  .skills-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nav-item {
+    margin-right: 10px;
+  }
+  .website-navigation {
+    padding-left: 10px;
+  }
+  .contact-block {
+    padding-left: 10px;
+  }
+  .main-logo {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 375px) {
