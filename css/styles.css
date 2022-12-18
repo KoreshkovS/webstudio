@@ -377,6 +377,10 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .our-work-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 992px) {
@@ -391,6 +395,9 @@ ul {
   .main-logo {
     margin-right: 0;
   }
+  .our-work-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -403,6 +410,12 @@ ul {
 
   .website-navigation {
     display: block;
+  }
+  .our-work-button-list {
+    display: block;
+  }
+  .portfolio-button {
+    margin-bottom: 10px;
   }
 }
 
@@ -421,6 +434,12 @@ ul {
   }
   .main-logo {
     font-size: 20px;
+  }
+  .our-work-list {
+    padding: 0;
+  }
+  .our-work-item {
+    margin: 0;
   }
 }
 
