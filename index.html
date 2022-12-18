@@ -1,228 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webovio</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
   </head>
   <body>
     <header>
-      <div class="container header-conteiner">
-        <a href="./" class="logo"><img src="/images/logo.svg" alt="Logo" /></a>
-        <button class="burger btn-reset" aria-label="Open Menu">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </button>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <span class="hero-subtitle">A place where </span>
-            <h1 class="hero-title">A creative agency for redemptive brands</h1>
-            <p class="hero-descr">
-              Anteelo is a leading strategic design firm that builds powerful
-              digital solutions for startups and enterprises.
-            </p>
-            <a href="#" class="hero-link link"
-              >&vrtri;<span> Get in touch</span></a
-            >
-          </div>
-        </div>
-      </section>
-      <section class="services">
-        <div class="container">
-          <h2 class="services-title">
-            Deation & Evaluation - Best Way to Kick off Your Product Idea
-          </h2>
-          <ul class="services-list">
-            <li class="services-item">
-              <h3 class="services-subtitle">Product <br> Design Sprint</h3>
-              <p class="services-descr">
-                A five-day workshop that will help you answer crucial business
-                questions
-              </p>
-              <a href="#" class="services-link link"
-                >&vrtri;<span> Read More</span></a
+      <div class="container">
+        <div class="header-block">
+          <nav class="nav-block">
+            <a href="/" class="main-logo"> <span>Web</span>Studio</a>
+            <ul class="website-navigation">
+              <li><a class="nav-item active-page" href="/">Студія</a></li>
+              <li><a class="nav-item" href="./portfolio.html">Портфоліо</a></li>
+              <li><a class="nav-item" href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contact-block">
+            <li>
+              <a class="mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
-            <li class="services-item">
-              <h3 class="services-subtitle">Scoping <br> Session</h3>
-              <p class="services-descr">
-                A workshop aimed at shaping your business idea, answering
-                questions regarding project planning
-              </p>
-              <a href="#" class="services-link link"
-                >&vrtri;<span> Read More</span></a
-              >
-            </li>
-            <li class="services-item">
-              <h3 class="services-subtitle">UX<br> Review</h3>
-              <p class="services-descr">
-                An evaluation which will help you radically improve your
-                product.
-              </p>
-              <a href="#" class="services-link link"
-                >&vrtri;<span> Read More</span></a
-              >
-            </li>
-            <li class="services-item">
-              <h3 class="services-subtitle">Code <br>Review</h3>
-              <p class="services-descr">
-                Do you know what one of the key secrets of success is what makes
-                people successful in business
-              </p>
-              <a href="#" class="services-link link"
-                >&vrtri;<span> Read More</span></a
-              >
+            <li>
+              <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="get-started">
+      </div>
+    </header>
+
+    <main>
+      <!-- Герой -->
+      <div class="hero-section">
         <div class="container">
-          <h2 class="get-started-title">
-            Let’s make something amazing together.
-          </h2>
-          <a href="#" class="get-started-link link"
-            >&vrtri;<span> Let's get started</span></a
-          >
+          <section class="hero-items">
+            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="order-button">Замовити послугу</button>
+          </section>
         </div>
-      </section>
-    </main>
-    <footer>
+      </div>
+      <!-- наші якості -->
       <div class="container">
-        <div class="footer-top">
-          <div class="footer-contacts-item">
-            <span class="footer-contacts-text">Phone</span>
-            <a href="tel:+3250312832" class="footer-contacts-value"
-              >+32 50 31 28 32</a
-            >
-          </div>
-          <div class="footer-contacts-item">
-            <span class="footer-contacts-text">Address</span>
-            <address class="footer-contacts-value">
-              491 Merlin Crest Suite 963
+        <section class="skills-section">
+          <h2 class="skills-main-title">Наші Якості</h2>
+          <ul class="skills-list">
+            <li class="skill-item">
+              <h3 class="skills-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="skills-descr">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="skill-item">
+              <h3 class="skills-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="skills-descr">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="skill-item">
+              <h3 class="skills-title">ПЛАНУВАННЯ</h3>
+              <p class="skills-descr">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="skill-item">
+              <h3 class="skills-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="skills-descr">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- чим займаємось -->
+      <section class="we-do-section">
+        <h2 class="we-do-title">Чим ми займаємося</h2>
+        <ul class="we-do-list">
+          <li class="we-do-item">
+            <img
+              src="./images/box-1.jpg"
+              width="370"
+              alt="Друк на клавіатурі"
+            />
+          </li>
+          <li class="we-do-item">
+            <img
+              src="./images/box-2.jpg"
+              width="370"
+              alt="Телевон в руках перед ноутбуком"
+            />
+          </li>
+          <li class="we-do-item">
+            <img
+              src="./images/box-3.png"
+              width="370"
+              alt="Планшет в руках перед комрʼютером"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- Команда -->
+      <div class="team-block">
+        <section class="team-section">
+          <h2 class="staff-title">Наша команда</h2>
+          <ul class="staff-list">
+            <li class="staff-box">
+              <img src="./images/igor.jpg" width="270" alt="Ігор Дем'яненко" />
+              <h3 class="staff-name-title">Ігор Дем'яненко</h3>
+              <p class="staff-position">Product Designer</p>
+            </li>
+            <li class="staff-box">
+              <img src="./images/olga.jpg" width="270" alt="Ольга Рєпіна" />
+              <h3 class="staff-name-title">Ольга Рєпіна</h3>
+              <p class="staff-position">Frontend Developer</p>
+            </li>
+            <li class="staff-box">
+              <img src="./images/mykola.jpg" width="270" alt="Микола Тарасов" />
+              <h3 class="staff-name-title">Микола Тарасов</h3>
+              <p class="staff-position">Marketing</p>
+            </li>
+            <li class="staff-box">
+              <img
+                src="./images/mykhailo.jpg"
+                width="270"
+                alt="Михайло Єрмаков"
+              />
+              <h3 class="staff-name-title">Михайло Єрмаков</h3>
+              <p class="staff-position">UI Designer</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-section">
+        <div class="container">
+          <div class="footer-list">
+            <a href="/" class="footer-logo"> <span>Web</span>Studio</a>
+            <address class="address-block">
+              <ul class="address-list">
+                <li>
+                  <a href="#" target="_blank" class="address-on-map"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li>
+                  <a class="address-phone" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+
+                <li>
+                  <a class="address-mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
             </address>
-          </div>
-        </div>
-        <div class="footer-middle">
-          <div class="footer-column">
-            <h3 class="footer-title">Services</h3>
-            <ul class="footer-list">
-              <li class="footer-item">
-                <a href="#" class="footer-link">Strategy Design</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Product Design</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Content Strategy</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Brand Strategy</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Development</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3 class="footer-title">Help And Advice</h3>
-            <ul class="footer-list">
-              <li class="footer-item">
-                <a href="#" class="footer-link">How it works</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Contact Support</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Privacy Policy</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3 class="footer-title">Company</h3>
-            <ul class="footer-list">
-              <li class="footer-item">
-                <a href="#" class="footer-link">About</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Blog</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Contact</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link">Jobs</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3 class="footer-title">Get in Touch</h3>
-            <p class="footer-text">
-              Feel free to get in touch with us vai email
-            </p>
-            <a href="mailto:info.webovio@gmail.com" class="footer-mail"
-              >info.webovio@gmail.com</a
+            <a
+              class="made-by"
+              href="https://heroic-semolina-173bba.netlify.app/"
+              target="_blank"
+              >Made by Serhii Koreshkov</a
             >
-            <ul class="social">
-              <li class="social-item">
-                <a
-                  href="#"
-                  class="social-link social-link-fb"
-                  target="_blank"
-                  aria-label="Link to Facebook"
-                ></a>
-              </li>
-              <li class="social-item">
-                <a
-                  href="#"
-                  class="social-link social-link-tw"
-                  target="_blank"
-                  aria-label="Link to Twitter"
-                ></a>
-              </li>
-              <li class="social-item">
-                <a
-                  href="#"
-                  class="social-link social-link-g"
-                  target="_blank"
-                  aria-label="Link to Google+"
-                ></a>
-              </li>
-              <li class="social-item">
-                <a
-                  href="#"
-                  class="social-link social-link-in"
-                  target="_blank"
-                  aria-label="Link to LinkeIn"
-                ></a>
-              </li>
-            </ul>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <a href="./" class="logo"
-            ><img src="/images/footer-logo.svg" alt="Logo"
-          /></a>
-          <small class="copyright"
-            >&copy 2020@webovio. All Rights Reserved.</small
-          >
         </div>
       </div>
     </footer>
