@@ -179,11 +179,16 @@ ul {
 .we-do-item {
   margin-left: 30px;
 }
+.we-do-item img {
+  width: 100%;
+  max-width: 370px;
+}
 .team-block {
   background-color: #f5f4fa;
 }
 .staff-list {
   display: flex;
+  padding: 0;
 }
 
 .team-section {
@@ -435,13 +440,20 @@ ul {
     padding-left: 10px;
   }
   .main-logo {
-    font-size: 20px;
+    font-size: 15px;
   }
   .our-work-list {
     padding: 0;
   }
   .our-work-item {
     margin: 0;
+  }
+  .contact-block {
+    display: none;
+  }
+  .header-block {
+   
+    justify-content: space-between;
   }
 }
 
