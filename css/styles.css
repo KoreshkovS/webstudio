@@ -1,5 +1,8 @@
 :root {
   --main-grey-color: #757575;
+  --blue-color: #2196f3;
+  --black-color: #212121;
+  --white-color: #ffffff;
 }
 
 body {
@@ -7,4 +10,205 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: var(--main-grey-color);
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87; /* 30/16 */
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+/* socials  */
+
+.instagram {
+}
+.twitter {
+}
+.facebook {
+}
+.linkedin {
+}
+.instagram-dark {
+}
+.twitter-dark {
+}
+.facebook-dark {
+}
+.linkedin-dark {
+}
+/* header  */
+
+.main-logo {
+  color: #000000;
+}
+.main-logo span {
+  color: var(--blue-color);
+}
+.white-logo {
+  color: var(--white-color);
+}
+.website-navigation {
+}
+.nav-item {
+}
+.nav-item:hover,
+.nav-item:focus,
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus {
+  color: var(--blue-color);
+}
+.active-page {
+  color: var(--blue-color);
+}
+.contact-block {
+}
+.mail {
+}
+.phone {
+}
+
+/* main  */
+
+/* hero section  */
+.hero {
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36; /* 60/44 */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-button {
+}
+
+/* features section  */
+
+.features {
+}
+.features-list {
+}
+.features-item {
+}
+.features-item-title {
+  font-weight: 700;
+  line-height: 1.14; /* 16/14 */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+.features-item-text {
+  line-height: 1.71; /* 24/14 */
+  letter-spacing: 0.03em;
+}
+
+/* do section  */
+.do {
+}
+.do-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16; /* 42/36 */
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.do-list {
+}
+.do-item {
+}
+.do-item-image {
+}
+.do-item-title {
+  font-weight: 700;
+  line-height: 1.14; /* 16/14 */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* team section  */
+.team {
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16; /* 42/36 */
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.team-list {
+}
+.team-item {
+}
+.team-item-image {
+}
+.team-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18; /* 19/16 */
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.team-item-position {
+  font-size: 16px;
+  line-height: 1.18; /* 19/16 */
+  letter-spacing: 0.03em;
+}
+.team-social-list {
+}
+.team-social-item {
+}
+
+/* clients section  */
+.clients {
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 116.666667%; /* 42/36 */
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.clients-list {
+}
+.clients-item {
+}
+.clients-item-link {
+}
+.clients-item-image {
+}
+
+/* footer  */
+.footer-adress {
+  font-style: normal;
+}
+.adress-city {
+}
+.adress-city:hover,
+.adress-city:focus {
+  color: var(--blue-color);
+}
+.footer-lable {
+  font-weight: 700;
+  line-height: 1.14; /* 16/14 */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-social-list {
+}
+.footer-social-item {
+}
+.footer-social-instagram {
+}
+.footer-social-twitter {
+}
+.footer-social-facebook {
+}
+.footer-social-linkedin {
 }
