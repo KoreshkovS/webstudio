@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: var(--main-grey-color);
+  background-color: var(--white-color);
 }
 
 .button {
@@ -19,6 +20,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--blue-color);
+}
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
 }
 /* socials  */
 
@@ -101,11 +109,8 @@ body {
 .features-item {
 }
 .features-item-title {
-  font-weight: 700;
   line-height: 1.14; /* 16/14 */
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black-color);
 }
 .features-item-text {
   line-height: 1.71; /* 24/14 */
@@ -116,11 +121,8 @@ body {
 .do {
 }
 .do-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16; /* 42/36 */
-  letter-spacing: 0.03em;
-  color: var(--black-color);
 }
 .do-list {
 }
@@ -129,22 +131,17 @@ body {
 .do-item-image {
 }
 .do-item-title {
-  font-weight: 700;
   line-height: 1.14; /* 16/14 */
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color);
 }
 
 /* team section  */
 .team {
+  background-color: #f5f4fa;
 }
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16; /* 42/36 */
-  letter-spacing: 0.03em;
-  color: var(--black-color);
 }
 .team-list {
 }
@@ -173,11 +170,8 @@ body {
 .clients {
 }
 .clients-title {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 116.666667%; /* 42/36 */
-  letter-spacing: 0.03em;
-  color: var(--black-color);
+  line-height: 1.16; /* 42/36 */
 }
 .clients-list {
 }
@@ -189,6 +183,9 @@ body {
 }
 
 /* footer  */
+.footer {
+  background-color: #2f303a;
+}
 .footer-adress {
   font-style: normal;
 }
@@ -241,7 +238,6 @@ body {
 .work-item-image {
 }
 .work-item-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2; /* 36/18 */
   letter-spacing: 0.06em;
