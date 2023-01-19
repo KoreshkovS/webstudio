@@ -12,7 +12,7 @@ body {
   color: var(--main-grey-color);
   background-color: var(--white-color);
 }
-.container {
+[class*="__container"] {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -101,6 +101,9 @@ h4 {
 
 /* hero section  */
 .hero {
+}
+.hero__container {
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
