@@ -101,6 +101,7 @@ h4 {
 
 /* hero section  */
 .hero {
+  margin-bottom: 94px;
 }
 .hero__container {
   text-align: center;
