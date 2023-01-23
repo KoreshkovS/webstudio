@@ -194,15 +194,15 @@ h4 {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 .team-item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .team-item-image {
 }
 .team-item-name {
@@ -231,12 +231,13 @@ h4 {
 }
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 .clients-item {
 }
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .clients-item-link {
   display: flex;
   width: 170px;
