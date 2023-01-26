@@ -413,6 +413,8 @@ h4 {
   background: #f5f4fa;
   border-radius: 4px;
   color: var(--black-color);
+  transition: color 0.8s ease 0s;
+  transition: background-color 0.8s ease 0s;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
