@@ -148,7 +148,7 @@ h4 {
   width: 14px;
   height: 22px;
   fill: var(--main-grey-color);
-  margin-right: 10px;
+  margin-right: 6px;
   transition: fill 0.8s ease 0s;
 }
 .phone:hover .phone-icon,
