@@ -106,7 +106,7 @@ h4 {
 .nav-item-link {
   display: block;
   padding: 32px 0;
-  transition: color 0.8s ease 0s;
+  transition: color 0.8s ease 0s, filter 0.8s ease 0s;
 }
 .nav-item-link:hover,
 .nav-item-link:focus,
@@ -115,6 +115,7 @@ h4 {
 .phone:hover,
 .phone:focus {
   color: var(--blue-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .active-page {
   color: var(--blue-color);
@@ -438,13 +439,32 @@ h4 {
 .footer-button {
   display: inline-flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .footer-button-icon {
   width: 24px;
   height: 24px;
   fill: var(--white-color);
-  margin-left: 10px;
 }
+.footer-button-icon-send {
+  margin-left: 10px;
+  transition: transform 0.8s ease 0s;
+}
+.footer-button:hover .footer-button-icon-send {
+  transform: translateY(-40px);
+}
+.footer-button-icon-envelope {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translateY(calc(-50% + 40px));
+  transition: transform 0.8s ease 0s;
+}
+.footer-button:hover .footer-button-icon-envelope {
+  transform: translateY(-50%);
+}
+
 /* portfolio page  */
 .work {
   margin: 94px 0;
@@ -467,8 +487,7 @@ h4 {
   background: #f5f4fa;
   border-radius: 4px;
   color: var(--black-color);
-  transition: color 0.8s ease 0s;
-  transition: background-color 0.8s ease 0s;
+  transition: background-color 0.8s ease 0s, color 0.8s ease 0s;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
