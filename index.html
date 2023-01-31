@@ -76,28 +76,36 @@
                 <use href="./images/icons/sprite.svg#cancel-modal"></use>
               </svg>
             </button>
-            <div class="modal-inputs">
+            <form class="modal-inputs">
+              <label for="name-id">Імʼя</label>
               <input
                 type="text"
-                placeholder="Name"
+                name="name"
+                placeholder=""
+                id="name-id"
                 class="modal-name input-modal"
               />
+              <label for="telephone-id">Телефон</label>
               <input
-                type="text"
-                placeholder="tel"
+                type="tel"
+                name="telephone"
+                placeholder=""
+                id="telephone-id"
                 class="modal-telephone input-modal"
               />
               <input
                 type="text"
+                name="e-mail"
                 placeholder="e-mail"
                 class="modal-mail input-modal"
               />
               <input
                 type="text"
+                name="description"
                 placeholder="Введіть текст"
                 class="modal-text input-modal"
               />
-            </div>
+            </form>
             <button type="button" class="modal-button-sent button">
               Відправити
             </button>

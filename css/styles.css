@@ -266,6 +266,7 @@ h4 {
   width: 11px;
   height: 11px;
   fill: #000000;
+  transition: fill 250ms var(--cubic);
 }
 .modal-button:hover .modal-button-icon,
 .modal-button:focus .modal-button-icon {
