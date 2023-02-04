@@ -93,22 +93,35 @@
                 id="telephone-id"
                 class="modal-telephone input-modal"
               />
+              <label for="e-mail-id">Пошта</label>
               <input
-                type="text"
+                type="email"
                 name="e-mail"
-                placeholder="e-mail"
+                id="e-mail-id"
+                placeholder=""
                 class="modal-mail input-modal"
               />
+              <label for="description-id">Коментар</label>
               <input
                 type="text"
                 name="description"
+                id="description-id"
                 placeholder="Введіть текст"
                 class="modal-text input-modal"
               />
+              <input
+                type="checkbox"
+                name="checkbox-result"
+                value="checkbox"
+                id="checkbox-id"
+              />
+              <label for="checkbox-id">
+                Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </label
+              >
+              <button type="submit" class="modal-button-sent button">
+                Відправити
+              </button>
             </form>
-            <button type="button" class="modal-button-sent button">
-              Відправити
-            </button>
           </div>
         </div>
       </section>
