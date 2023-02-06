@@ -273,7 +273,6 @@ h4 {
   fill: var(--blue-color);
 }
 .modal-inputs {
-  display: block;
 }
 .input-modal {
   width: 100%;
@@ -282,18 +281,21 @@ h4 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+
 .modal-name {
-  margin-bottom: 10px;
 }
 .modal-telephone {
-  margin-bottom: 10px;
 }
 .modal-mail {
-  margin-bottom: 10px;
 }
 .modal-text {
+  font-family: "Roboto", sans-serif;
   height: 120px;
-  margin-bottom: 74px;
+  resize: none;
+  font-size: 12px;
+  line-height: 1.16; /* 14/12 */
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-button-sent {
   display: block;
