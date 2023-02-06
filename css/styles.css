@@ -120,7 +120,7 @@ h4 {
   color: var(--blue-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.active-page {
+.nav-item-link.active {
   color: var(--blue-color);
 }
 .nav-item-link::after {
@@ -216,6 +216,7 @@ h4 {
 /* modal window  */
 .backdrop {
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
@@ -282,11 +283,15 @@ h4 {
   border-radius: 4px;
 }
 
-.modal-name {
+.modal-form {
+  margin-bottom: 10px;
 }
-.modal-telephone {
-}
-.modal-mail {
+.title-modal {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.16; /* 14/12 */
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
 }
 .modal-text {
   font-family: "Roboto", sans-serif;
@@ -296,6 +301,31 @@ h4 {
   line-height: 1.16; /* 14/12 */
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.form-comment {
+  margin-bottom: 20px;
+}
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+.form-checkbox-input {
+  margin-right: 8px;
+}
+.form-checkbox-text {
+  line-height: 1.71; /* 24/14 */
+  letter-spacing: 0.03em;
+}
+.form-checkbox-text a {
+  color: var(--blue-color);
+  text-decoration: underline;
+  transform: color 250s var(--cubic);
+}
+.form-checkbox-text a:hover {
+  color: #50aaf4;
+}
+.form-checkbox {
+  margin-bottom: 30px;
 }
 .modal-button-sent {
   display: block;
@@ -527,6 +557,13 @@ h4 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+  width: 358px;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25; /* 20/16 */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
 }
 .footer-button {
   display: inline-flex;

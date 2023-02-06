@@ -22,7 +22,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="nav-item">
-              <a class="nav-item-link active-page" href="./index.html"
+              <a class="nav-item-link active" href="./index.html"
                 >Студія</a
               >
             </li>
@@ -77,8 +77,8 @@
               </svg>
             </button>
             <form class="modal-inputs">
-              <div class="form-name">
-                <label for="name-id">Імʼя</label>
+              <div class="modal-form">
+                <label class="title-modal" for="name-id">Імʼя</label>
                 <input
                   type="text"
                   name="name"
@@ -87,8 +87,8 @@
                   class="modal-name input-modal"
                 />
               </div>
-              <div class="form-tel">
-                <label for="telephone-id">Телефон</label>
+              <div class="modal-form">
+                <label class="title-modal" for="telephone-id">Телефон</label>
                 <input
                   type="tel"
                   name="telephone"
@@ -97,8 +97,8 @@
                   class="modal-telephone input-modal"
                 />
               </div>
-              <div class="form-mail">
-                <label for="e-mail-id">Пошта</label>
+              <div class="modal-form">
+                <label class="title-modal" for="e-mail-id">Пошта</label>
                 <input
                   type="email"
                   name="e-mail"
@@ -108,7 +108,7 @@
                 />
               </div>
               <div class="form-comment">
-                <label for="description-id">Коментар</label>
+                <label class="title-modal" for="description-id">Коментар</label>
                 <textarea
                   name="description"
                   id="description-id"
@@ -118,13 +118,13 @@
                 ></textarea>
               </div>
               <div class="form-checkbox">
-                <input
+                <input class="form-checkbox-input"
                   type="checkbox"
                   name="checkbox-result"
                   value="checkbox"
                   id="checkbox-id"
                 />
-                <label for="checkbox-id">
+                <label for="checkbox-id" class="form-checkbox-text">
                   Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
                 </label>
               </div>
@@ -495,7 +495,7 @@
         </div>
         <div class="footer-input-box">
           <p class="footer-lable">Підпишіться на розсилку</p>
-          <input type="email" class="footer-input" />
+          <input type="email" class="footer-input" placeholder="E-mail"/>
           <button class="footer-button button">
             Підписатись
             <svg class="footer-button-icon footer-button-icon-send">
