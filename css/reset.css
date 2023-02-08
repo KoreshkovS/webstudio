@@ -43,3 +43,9 @@ button {
   cursor: pointer;
   background-color: inherit;
 }
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}

@@ -22,9 +22,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="nav-item">
-              <a class="nav-item-link active" href="./index.html"
-                >Студія</a
-              >
+              <a class="nav-item-link active" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
               <a class="nav-item-link" href="./portfolio.html">Портфоліо</a>
@@ -78,37 +76,48 @@
             </button>
             <form class="modal-inputs">
               <div class="modal-form">
-                <label class="title-modal" for="name-id">Імʼя</label>
                 <input
                   type="text"
                   name="name"
-                  placeholder=""
+                  placeholder=" "
                   id="name-id"
                   class="modal-name input-modal"
                 />
+                <label class="title-modal" for="name-id">Імʼя</label>
+                <svg class="modal-icon">
+                  <use href="./images/icons/sprite.svg#name-modal"></use>
+                </svg>
               </div>
               <div class="modal-form">
-                <label class="title-modal" for="telephone-id">Телефон</label>
                 <input
                   type="tel"
                   name="telephone"
-                  placeholder=""
+                  placeholder=" "
                   id="telephone-id"
                   class="modal-telephone input-modal"
                 />
+                <label class="title-modal" for="telephone-id">Телефон</label>
+                <svg class="modal-icon">
+                  <use href="./images/icons/sprite.svg#telephone-modal"></use>
+                </svg>
               </div>
               <div class="modal-form">
-                <label class="title-modal" for="e-mail-id">Пошта</label>
                 <input
                   type="email"
                   name="e-mail"
                   id="e-mail-id"
-                  placeholder=""
+                  placeholder=" "
                   class="modal-mail input-modal"
                 />
+                <label class="title-modal" for="e-mail-id">Пошта</label>
+                <svg class="modal-icon">
+                  <use href="./images/icons/sprite.svg#mail-modal"></use>
+                </svg>
               </div>
               <div class="form-comment">
-                <label class="title-modal" for="description-id">Коментар</label>
+                <label class="title-modal modal-comment" for="description-id"
+                  >Коментар</label
+                >
                 <textarea
                   name="description"
                   id="description-id"
@@ -118,14 +127,18 @@
                 ></textarea>
               </div>
               <div class="form-checkbox">
-                <input class="form-checkbox-input"
-                  type="checkbox"
-                  name="checkbox-result"
-                  value="checkbox"
-                  id="checkbox-id"
-                />
-                <label for="checkbox-id" class="form-checkbox-text">
-                  Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                <label class="form-checkbox-text">
+                  <input
+                    class="form-checkbox-input"
+                    type="checkbox"
+                    name="checkbox-result"
+                    value="checkbox"
+                  />
+                  <svg class="checkbox-icon">
+                  <use href="./images/icons/sprite.svg#checkbox"></use>
+                  </svg>
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="">Умови договору</a>
                 </label>
               </div>
               <button type="submit" class="modal-button-sent button">
@@ -495,7 +508,7 @@
         </div>
         <div class="footer-input-box">
           <p class="footer-lable">Підпишіться на розсилку</p>
-          <input type="email" class="footer-input" placeholder="E-mail"/>
+          <input type="email" class="footer-input" placeholder="E-mail" />
           <button class="footer-button button">
             Підписатись
             <svg class="footer-button-icon footer-button-icon-send">
