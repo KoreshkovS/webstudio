@@ -211,8 +211,7 @@ h4 {
   color: var(--white-color);
   margin-bottom: 30px;
 }
-.hero-button {
-}
+
 /* modal window  */
 .backdrop {
   position: fixed;
@@ -336,17 +335,25 @@ h4 {
 .form-comment {
   margin-bottom: 20px;
 }
-.modal-comment {
-}
+
 .form-checkbox {
   display: flex;
   align-items: center;
 }
 .form-checkbox-input {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   position: absolute;
+
+  /* appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; */
+  /* верхній код скриває чекбокс для браузерів, крім інтернет експлорера, а нижній - для всіх */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .checkbox-icon {
   width: 16px;
@@ -534,8 +541,6 @@ h4 {
   justify-content: center;
   gap: 30px;
 }
-.clients-item {
-}
 
 .clients-item-link {
   display: flex;
@@ -719,8 +724,7 @@ h4 {
 .work-item-link:focus .work-item-overlay {
   transform: translateY(0%);
 }
-.work-item-image {
-}
+
 .work-item-text {
   position: absolute;
   font-size: 18px;
