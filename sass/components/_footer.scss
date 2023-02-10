@@ -76,7 +76,7 @@
   top: 50%;
   left: 150px;
   transform: translateY(calc(-50% + 40px));
-  transition: transform 250ms var(--cubic) 0s;
+  transition: transform 250ms $cubic 0s;
   .footer-button:hover & {
     transform: translateY(-50%);
   }
