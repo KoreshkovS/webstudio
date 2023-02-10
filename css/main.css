@@ -603,4 +603,62 @@ h4 {
 .features-item-text {
   line-height: 1.71; /* 24/14 */
   letter-spacing: 0.03em;
+}
+
+.do {
+  margin-bottom: 94px;
+}
+
+.do-title {
+  font-size: 36px;
+  line-height: 1.16; /* 42/36 */
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.do-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.do-item {
+  max-width: 370px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.do-item:not(:last-child) {
+  margin-right: 30px;
+}
+.do-item::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.do-item-image {
+  width: 100%;
+}
+
+.do-item-title {
+  position: absolute;
+  line-height: 1.14; /* 16/14 */
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 27px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
