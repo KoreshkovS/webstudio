@@ -1,0 +1,27 @@
+.hero {
+  margin-bottom: 94px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  max-width: 1600px;
+}
+.hero__container {
+  text-align: center;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36; /* 60/44 */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  margin-bottom: 30px;
+}

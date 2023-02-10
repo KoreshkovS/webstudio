@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: $mainGrayColor;
+  background-color: $whiteColor;
+}
+[class*="__container"] {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+// /* maket size 1170 + paddings = 1200 container  */
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $blackColor;
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87; /* 30/16 */
+  letter-spacing: 0.06em;
+  color: $whiteColor;
+  background-color: $blueColor;
+  padding: 10px 32px;
+  text-align: center;
+  transition: background-color 250ms $cubic 0s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  background-color: #50aaf4;
+}
+/* socials  */
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  transition: background-color 250ms $cubic 0s;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: $blueColor;
+}
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 250ms $cubic 0s;
+}
+
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
+  fill: $whiteColor;
+}
+.social-link-icon-white {
+  fill: $whiteColor;
+}
+.social-link-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
