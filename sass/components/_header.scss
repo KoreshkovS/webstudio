@@ -68,9 +68,21 @@
 .contact-block {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+  }
 }
-.contact-block-item:not(:last-child) {
-  margin-right: 30px;
+.contact-block-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  @media screen and (max-width: 1200px) {
+   &:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  }
 }
 .mail {
   display: flex;

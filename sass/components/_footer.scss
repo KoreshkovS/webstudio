@@ -6,6 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .footer-logo {
   color: $whiteColor;
@@ -19,11 +24,12 @@
 }
 .adress-city {
   transition: color 250ms $cubic 0s;
+  &:hover,
+  &:focus {
+    color: $blueColor;
+  }
 }
-.adress-city:hover,
-.adress-city:focus {
-  color: $blueColor;
-}
+
 .footer-lable {
   font-weight: 700;
   line-height: 1.14; /* 16/14 */
@@ -52,12 +58,23 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 20px;
+  }
+}
+.footer-input-box {
+  @media screen and (max-width: 766px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer-button {
   display: inline-flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+  max-width: 200px;
 }
 .footer-button-icon {
   width: 24px;
