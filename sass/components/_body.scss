@@ -4,6 +4,9 @@ body {
   font-size: 14px;
   color: $mainGrayColor;
   background-color: $whiteColor;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 [class*="__container"] {
   max-width: 1200px;
@@ -30,11 +33,12 @@ h4 {
   transition: background-color 250ms $cubic 0s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  &:hover,
+  &:focus {
+    background-color: #50aaf4;
+  }
 }
-.button:hover,
-.button:focus {
-  background-color: #50aaf4;
-}
+
 /* socials  */
 .social-link {
   display: block;
@@ -43,22 +47,23 @@ h4 {
   border-radius: 50%;
   padding: 12px;
   transition: background-color 250ms $cubic 0s;
+  &:hover,
+  &:focus {
+    background-color: $blueColor;
+  }
 }
-.social-link:hover,
-.social-link:focus {
-  background-color: $blueColor;
-}
+
 .social-link-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
   transition: fill 250ms $cubic 0s;
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: $whiteColor;
+  }
 }
 
-.social-link:hover .social-link-icon,
-.social-link:focus .social-link-icon {
-  fill: $whiteColor;
-}
 .social-link-icon-white {
   fill: $whiteColor;
 }
