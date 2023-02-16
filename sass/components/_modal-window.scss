@@ -18,9 +18,7 @@
 }
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+
   max-width: 528px;
   width: 100%;
   padding: 40px;
@@ -29,9 +27,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms $cubic;
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  @media screen and (min-width: 767.98px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 .modal-title {
   font-size: 20px;
@@ -54,10 +57,10 @@
   height: 11px;
   fill: #000000;
   transition: fill 250ms $cubic;
-}
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
-  fill: $blueColor;
+  .modal-button:hover &,
+  .modal-button:focus & {
+    fill: $blueColor;
+  }
 }
 .modal-form {
   position: relative;
@@ -82,17 +85,17 @@
   line-height: 1.16; /* 14/12 */
   letter-spacing: 0.01em;
   transition: transform 250ms $cubic, color 250ms $cubic, left 250ms $cubic;
+  .input-modal:focus + &,
+  .input-modal:not(:placeholder-shown) + & {
+    color: $blueColor;
+    transform: translateY(-40px);
+    left: 0;
+  }
+  &:focus {
+    border-color: $blueColor;
+  }
 }
 
-.input-modal:focus + .title-modal,
-.input-modal:not(:placeholder-shown) + .title-modal {
-  color: $blueColor;
-  transform: translateY(-40px);
-  left: 0;
-}
-.input-modal:focus {
-  border-color: $blueColor;
-}
 .modal-icon {
   position: absolute;
   top: 50%;
@@ -101,15 +104,14 @@
   width: 12px;
   height: 12px;
   transition: fill 250ms $cubic;
+  .modal-form:focus-within & {
+    fill: $blueColor;
+  }
 }
 /* .input-modal:focus ~ .modal-icon {
   fill: var(--blue-color);
 }  
-те сами нижче тільки іншими словами, але не в усіх браузерах працює */
-
-.modal-form:focus-within .modal-icon {
-  fill: $blueColor;
-}
+те саме вище тільки іншими словами, але не в усіх браузерах працює */
 
 .modal-text {
   font-family: "Roboto", sans-serif;
@@ -160,10 +162,10 @@
   fill: $whiteColor;
   margin-right: 9px;
   transition: background-color 250ms $cubic, border 250ms $cubic;
-}
-.form-checkbox-input:checked + .checkbox-icon {
-  background-color: $blueColor;
-  border: none;
+  .form-checkbox-input:checked + & {
+    background-color: $blueColor;
+    border: none;
+  }
 }
 .form-checkbox-text {
   display: flex;

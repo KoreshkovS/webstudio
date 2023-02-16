@@ -12,44 +12,58 @@
     />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="website icon" type="png" href="./images/my-logo.png" />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <a href="./index.html" class="main-logo"> <span>Web</span>Studio</a>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="nav-item">
-              <a class="nav-item-link active" href="./index.html">Студія</a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" class="mobile-menu-icon">
+            <use class="icon-cross" href="./images/icons/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./images/icons/sprite.svg#menu"></use>
+          </svg>
+        </button>
+       <div class="menu-container" id="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="nav-item">
+                <a class="nav-item-link active" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact-block">
+            <li class="contact-block-item">
+              <a class="mail" href="mailto:info@devstudio.com">
+                <svg class="mail-icon">
+                  <use href="./images/icons/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="#">Контакти</a>
+            <li class="contact-block-item">
+              <a class="phone" href="tel:+380961111111">
+                <svg class="phone-icon">
+                  <use href="./images/icons/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contact-block">
-          <li class="contact-block-item">
-            <a class="mail" href="mailto:info@devstudio.com">
-              <svg class="mail-icon">
-                <use href="./images/icons/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-block-item">
-            <a class="phone" href="tel:+380961111111">
-              <svg class="phone-icon">
-                <use href="./images/icons/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+       </div>
       </div>
     </header>
 
@@ -135,7 +149,7 @@
                     value="checkbox"
                   />
                   <svg class="checkbox-icon">
-                  <use href="./images/icons/sprite.svg#checkbox"></use>
+                    <use href="./images/icons/sprite.svg#checkbox"></use>
                   </svg>
                   Погоджуюся з розсилкою та приймаю
                   <a href="">Умови договору</a>

@@ -138,6 +138,7 @@ h4 {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -176,7 +177,6 @@ h4 {
 .nav-item {
   position: relative;
 }
-
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -187,25 +187,12 @@ h4 {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
-
-.nav-item-link:hover,
-.nav-item-link:focus {
+.nav-item-link:hover, .nav-item-link:focus {
   color: #2196f3;
 }
-
-.mail:hover,
-.mail:focus,
-.phone:hover,
-.phone:focus {
-  color: #2196f3;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 .nav-item-link.active {
   color: #2196f3;
 }
-
 .nav-item-link::after {
   position: absolute;
   content: "";
@@ -222,7 +209,6 @@ h4 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
-
 .nav-item-link:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
@@ -267,6 +253,11 @@ h4 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, filter 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, filter 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
+.mail:hover, .mail:focus {
+  color: #2196f3;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
 .mail-icon {
   width: 16px;
@@ -276,9 +267,7 @@ h4 {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
-
-.mail:hover .mail-icon,
-.mail:focus .mail-icon {
+.mail:hover .mail-icon, .mail:focus .mail-icon {
   fill: #2196f3;
 }
 
@@ -291,6 +280,11 @@ h4 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, filter 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, filter 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
+.phone:hover, .phone:focus {
+  color: #2196f3;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
 .phone-icon {
   width: 14px;
@@ -300,13 +294,48 @@ h4 {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
-
-.phone:hover .phone-icon,
-.phone:focus .phone-icon {
+.phone:hover .phone-icon, .phone:focus .phone-icon {
   fill: #2196f3;
 }
 
+.menu-container {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-button {
+  margin-left: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+}
+
+.icon-cross {
+  -webkit-transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.icon-menu {
+  -webkit-transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .hero {
+  margin: 0 auto;
   margin-bottom: 94px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg.jpg);
@@ -354,10 +383,6 @@ h4 {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
   max-width: 528px;
   width: 100%;
   padding: 40px;
@@ -370,10 +395,17 @@ h4 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
+}
+@media screen and (min-width: 767.98px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal-title {
@@ -401,9 +433,7 @@ h4 {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
+.modal-button:hover .modal-button-icon, .modal-button:focus .modal-button-icon {
   fill: #2196f3;
 }
 
@@ -437,28 +467,23 @@ h4 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .input-modal:not(:-moz-placeholder-shown) + .title-modal {
   color: #2196f3;
   transform: translateY(-40px);
   left: 0;
 }
-
 .input-modal:not(:-ms-input-placeholder) + .title-modal {
   color: #2196f3;
   transform: translateY(-40px);
   left: 0;
 }
-
-.input-modal:focus + .title-modal,
-.input-modal:not(:placeholder-shown) + .title-modal {
+.input-modal:focus + .title-modal, .input-modal:not(:placeholder-shown) + .title-modal {
   color: #2196f3;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
   left: 0;
 }
-
-.input-modal:focus {
+.title-modal:focus {
   border-color: #2196f3;
 }
 
@@ -473,15 +498,14 @@ h4 {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .input-modal:focus ~ .modal-icon {
-  fill: var(--blue-color);
-}  
-те сами нижче тільки іншими словами, але не в усіх браузерах працює */
 .modal-form:focus-within .modal-icon {
   fill: #2196f3;
 }
 
+/* .input-modal:focus ~ .modal-icon {
+  fill: var(--blue-color);
+}  
+те саме вище тільки іншими словами, але не в усіх браузерах працює */
 .modal-text {
   font-family: "Roboto", sans-serif;
   height: 120px;
@@ -540,7 +564,6 @@ h4 {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-checkbox-input:checked + .checkbox-icon {
   background-color: #2196f3;
   border: none;
