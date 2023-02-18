@@ -48,11 +48,10 @@
     color: $blueColor;
   }
 }
-.active {
+.active.nav-item-link {
+  color: $blueColor;
 }
 .contact-block {
-  display: flex;
-  flex-direction: column-reverse;
 }
 .contact-block-item {
 }
