@@ -162,16 +162,30 @@ h4 {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 767.98px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .menu-container {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #ffffff;
   width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -181,9 +195,48 @@ h4 {
           justify-content: space-between;
   padding: 0px 40px 50px 40px;
 }
+.menu-container.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 767.98px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .nav-item:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 767.98px) {
+  .nav-item {
+    display: inline-block;
+  }
+  .nav-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .nav-item-link {
@@ -191,11 +244,25 @@ h4 {
   font-size: 40px;
   line-height: 1.17; /* 47/40 */
   letter-spacing: 0.02em;
-  -webkit-transform: color 250s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-          transform: color 250s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 .nav-item-link:hover, .nav-item-link:focus {
   color: #2196f3;
+}
+@media screen and (min-width: 767.98px) {
+  .nav-item-link {
+    font-size: 14px;
+    line-height: 1.14; /* 16/14 */
+    color: #212121;
+    display: block;
+    padding: 32px 0;
+  }
+  .nav-item-link:hover::after {
+    content: "";
+    background: #2196f3;
+    border-radius: 2px;
+  }
 }
 
 .active.nav-item-link {
@@ -213,12 +280,26 @@ h4 {
 .mail:hover, .mail:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 767.98px) {
+  .mail {
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .mail-icon {
   width: 16px;
   height: 12px;
   fill: #757575;
   display: none;
+}
+@media screen and (min-width: 767.98px) {
+  .mail-icon {
+    display: block;
+    margin-right: 8px;
+  }
 }
 
 .phone {
@@ -234,12 +315,27 @@ h4 {
 .phone:hover, .phone:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 767.98px) {
+  .phone {
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
 
 .phone-icon {
   width: 10px;
   height: 16px;
   fill: #757575;
   display: none;
+}
+@media screen and (min-width: 767.98px) {
+  .phone-icon {
+    display: block;
+    margin-right: 8px;
+  }
 }
 
 .work {
