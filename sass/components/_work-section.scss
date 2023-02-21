@@ -6,11 +6,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-.work-button-item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+  flex-wrap: wrap;
+  gap: 8px;
+
 }
 .portfolio-button {
   font-weight: 500;
@@ -36,13 +34,16 @@
 }
 .work-item {
   margin: 0 auto;
-  max-width: 370px;
+  max-width: 300px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms $cubic 0s;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @media screen and (min-width: 479.98px) {
+    max-width: 370px;
   }
 }
 
